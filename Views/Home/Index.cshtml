@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+        <h1 class="display-4">Sistema de Gestão Clínica</h1>
+        <p class="lead">Bem-vindo ao SaepSimulado!</p>
+        <p>Gerencie pacientes, médicos e consultas em um só lugar.</p>
+    </div>
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Pacientes</h5>
+                    <p class="card-text">Consulte os pacientes cadastrados.</p>
+                    <a asp-controller="Paciente"
+                       asp-action="Index"
+                       class="btn btn-primary">
+                        Acessar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Médicos</h5>
+                    <p class="card-text">Consulte os médicos cadastrados.</p>
+                    <a asp-controller="Medico"
+                       asp-action="Index"
+                       class="btn btn-primary">
+                        Acessar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Consultas</h5>
+                    <p class="card-text">Visualize e gerencie consultas.</p>
+                    <a asp-controller="Consulta"
+                       asp-action="Index"
+                       class="btn btn-primary">
+                        Acessar
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <a asp-controller="Account"
+           asp-action="Login"
+           class="btn btn-success btn-lg">
+            Entrar no sistema
+        </a>
+    </div>
+
+</div>
